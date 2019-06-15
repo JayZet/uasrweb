@@ -1,15 +1,15 @@
 <?php
-class Registrasi extends CI_Controller{
+class Pembayaran extends CI_Controller{
 
 
     public function index(){
         
-        $data['judul'] = "Pendaftaran Siswa Baru";
+        $data['judul'] = "Pembayaran";
 
         $this->load->view('templates/header',$data);
         $this->load->view('templates/sidebar');
         $this->load->view('templates/topbar');
-        $this->load->view('pendaftaran/registrasi');
+        $this->load->view('pembayaran/pembayaran');
         $this->load->view('templates/footer');
     }
 }

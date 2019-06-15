@@ -18,7 +18,7 @@
 				<div class="form-group">
 					<label for="exampleInputPassword1" style="color: teal;">Password</label>
 					<input type="password" class="form-control form-control-user" id="password" name="password" placeholder="enter your password">		
-                    <?php echo form_error('username'); ?>
+                    <?php echo form_error('password'); ?>
                 </div>
                 <div class="form-group">
                     <small>Belum punya akun ? <a href="<?= base_url('Login/registrasi') ?>"> Daftar Sekarang</a></small>

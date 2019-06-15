@@ -32,6 +32,11 @@
         <i class="fas fa-fw fa-user"></i>
         <span>Pendaftaran</span></a>
     </li>
+    <li class="nav-item">
+      <a class="nav-link" href="<?= base_url('Pembayaran') ?>">
+        <i class="fas fa-fw fa-dollar-sign"></i>
+        <span>Pembayaran</span></a>
+    </li>
 
    
   <!-- Divider -->
