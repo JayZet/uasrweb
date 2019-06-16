@@ -8,16 +8,15 @@
 			<form action="<?= base_url('Login/aksi_login') ?>" method="post">
 			
 				<div class="form-group">
-					<label for="exampleInputEmail1" style="color: teal;">Username</label>
-					<input type="text" class="form-control form-control-user" id="username" name="username" aria-describedby="emailHelp"
-                        placeholder="enter your username">
+					<label for="exampleInputEmail1" style="color: teal;">Nomor Seluler</label>
+					<input type="text" class="form-control form-control-user" id="username" name="username">
                         <?php echo form_error('username'); ?>
 						
 				</div>
 
 				<div class="form-group">
 					<label for="exampleInputPassword1" style="color: teal;">Password</label>
-					<input type="password" class="form-control form-control-user" id="password" name="password" placeholder="enter your password">		
+					<input type="password" class="form-control form-control-user" id="password" name="password">		
                     <?php echo form_error('password'); ?>
                 </div>
                 <div class="form-group">

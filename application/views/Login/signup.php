@@ -9,20 +9,20 @@
 			
             <div class="form-group row">
                   <div class="col-sm-6 mb-3 mb-sm-0">
-                    <input type="text" class="form-control form-control-user" name="nama_awal" id="exampleFirstName" placeholder="First Name">
+                    <input type="text" class="form-control form-control-user" name="nama_awal" id="exampleFirstName" placeholder="Nama Depan">
                     <?php echo form_error('nama_awal'); ?>
                   </div>
                   <div class="col-sm-6">
-                    <input type="text" class="form-control form-control-user" name="nama_akhir" id="exampleLastName" placeholder="Last Name">
+                    <input type="text" class="form-control form-control-user" name="nama_akhir" id="exampleLastName" placeholder="Nama Belakang">
                     <?php echo form_error('nama_akhir'); ?>
                   </div>
                 </div>
                 <div class="form-group">
-                  <input type="email" class="form-control form-control-user" name="email" id="exampleInputEmail" placeholder="Email Address">
+                  <input type="email" class="form-control form-control-user" name="email" id="exampleInputEmail" placeholder="Alamat Email">
                   <?php echo form_error('email'); ?>
                 </div>
                 <div class="form-group">
-                  <input type="text" class="form-control form-control-user" name="username" id="exampleInputName" placeholder="Username">
+                  <input type="text" class="form-control form-control-user" name="username" id="exampleInputName" placeholder="Nomor Seluler">
                   <?php echo form_error('username'); ?>
                 </div>
                 <div class="form-group row">
@@ -31,8 +31,8 @@
                     <?php echo form_error('password'); ?>
                   </div>
                   <div class="col-sm-6">
-                    <input type="password" class="form-control form-control-user" name="password2" id="exampleRepeatPassword" placeholder="Repeat Password">
-                    <?php echo form_error('password2'); ?>
+                    <input type="password" class="form-control form-control-user" name="confirm_pass" id="exampleRepeatPassword" placeholder="Konfirmasi Password">
+                    <?php echo form_error('confirm_pass'); ?>
                   </div>
                 </div>
                 <div class="form-group">
