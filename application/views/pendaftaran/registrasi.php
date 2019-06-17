@@ -40,7 +40,7 @@
                     <div class="row">
                         <div class="col-3">
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" id="lk" name="jenis_kelamin"  value="laki-laki" checked>
+                            <input class="form-check-input" type="radio" id="lk" name="jenis_kelamin"  value="laki-laki">
                             <label class="form-check-label" for="lk">
                                 Laki-laki
                             </label>
@@ -48,13 +48,14 @@
                         </div>
                         <div class="col-3">
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" id="pr" name="jenis_kelamin" value="perempuan" checked>
+                            <input class="form-check-input" type="radio" id="pr" name="jenis_kelamin" value="perempuan">
                             <label class="form-check-label" for="pr">
                                 Perempuan
                             </label>
                         </div>
                         </div>
                     </div>
+                    <?php echo form_error('jenis_kelamin'); ?>
 				</div>
             </div>
             <div class="col-lg-6 col-sm-12">
@@ -110,19 +111,19 @@
 			</div>
 			<div class="col-lg-6 col-sm-12">
 				<div class="form-group">
-					<label for="tinggal">Tinggal Bersama</label>
+					<label for="tinggal_bersama">Tinggal Bersama</label>
                     <div class="row">
                         <div class="col-sm-2">
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" name="tinggal_bersama" id="orangtua" value="Orang Tua" checked>
-                                <label class="form-check-label" for="orangtua">
+                                <input class="form-check-input" type="radio" name="tinggal_bersama" id="orang_tua" value="Orang Tua">
+                                <label class="form-check-label" for="orang_tua">
                                     Orang Tua
                                 </label>
                             </div>
                         </div>
                         <div class="col-sm-2">
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" name="tinggal_bersama" id="wali" value="Wali" checked>
+                                <input class="form-check-input" type="radio" name="tinggal_bersama" id="wali" value="Wali">
                                 <label class="form-check-label" for="wali">
                                     Wali
                                 </label>
@@ -130,7 +131,7 @@
                         </div>
                         <div class="col-sm-2">
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" name="tinggal_bersama" id="pondok" value="Pondok" checked>
+                                <input class="form-check-input" type="radio" name="tinggal_bersama" id="pondok" value="Pondok">
                                 <label class="form-check-label" for="pondok">
                                     Pondok
                                 </label>
@@ -138,7 +139,7 @@
                         </div>
                         <div class="col-sm-2">
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" name="tinggal_bersama" id="panti_asuhan" value="Panti Asuhan" checked>
+                                <input class="form-check-input" type="radio" name="tinggal_bersama" id="panti_asuhan" value="Panti Asuhan">
                                 <label class="form-check-label" for="panti_asuhan">
                                     Panti Asuhan
                                 </label>
@@ -148,6 +149,7 @@
                             <input type="text" class="form-control" id="tinggal_bersama" name="tinggal_bersama" placeholder='Lainnya'>
                         </div>
                     </div>
+                    <?php echo form_error('tinggal_bersama'); ?>
 				</div>
 			</div>
     </div>
@@ -201,7 +203,7 @@
                     <div class="row">
                         <div class="col-sm-2">
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" name="pendidikan_terakhir_ayah" id="tidak_sekolah_ayah" value="tidak_sekolah" checked>
+                                <input class="form-check-input" type="radio" name="pendidikan_terakhir_ayah" id="tidak_sekolah_ayah" value="tidak_sekolah">
                                 <label class="form-check-label" for="tidak_sekolah_ayah">
                                     Tidak Sekolah
                                 </label>
@@ -209,7 +211,7 @@
                         </div>
                         <div class="col-sm-2">
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" name="pendidikan_terakhir_ayah" id="sd_ayah" value="SD" checked>
+                                <input class="form-check-input" type="radio" name="pendidikan_terakhir_ayah" id="sd_ayah" value="SD">
                                 <label class="form-check-label" for="sd_ayah">
                                     SD
                                 </label>
@@ -217,7 +219,7 @@
                         </div>
                         <div class="col-sm-2">
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" name="pendidikan_terakhir_ayah" id="smp_ayah" value="SMP" checked>
+                                <input class="form-check-input" type="radio" name="pendidikan_terakhir_ayah" id="smp_ayah" value="SMP">
                                 <label class="form-check-label" for="smp_ayah">
                                     SMP
                                 </label>
@@ -225,7 +227,7 @@
                         </div>
                         <div class="col-sm-2">
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" name="pendidikan_terakhir_ayah" id="sma_ayah" value="SMA" checked>
+                                <input class="form-check-input" type="radio" name="pendidikan_terakhir_ayah" id="sma_ayah" value="SMA">
                                 <label class="form-check-label" for="sma_ayah">
                                     SMA
                                 </label>
@@ -233,7 +235,7 @@
                         </div>
                         <div class="col-sm-2">
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" name="pendidikan_terakhir_ayah" id="diploma_ayah" value="Diploma" checked>
+                                <input class="form-check-input" type="radio" name="pendidikan_terakhir_ayah" id="diploma_ayah" value="Diploma">
                                 <label class="form-check-label" for="diploma_ayah">
                                     Diploma
                                 </label>
@@ -241,13 +243,14 @@
                         </div>
                         <div class="col-sm-2">
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" name="pendidikan_terakhir_ayah" id="sarjana_ayah" value="Sarjana" checked>
+                                <input class="form-check-input" type="radio" name="pendidikan_terakhir_ayah" id="sarjana_ayah" value="Sarjana">
                                 <label class="form-check-label" for="sarjana_ayah">
                                     Sarjana
                                 </label>
                             </div>
                         </div>
                     </div>
+                    <?php echo form_error('pendidikan_terakhir_ayah'); ?>
 				</div>
             </div>
             <div class="col-lg-6 col-sm-12">
@@ -325,7 +328,7 @@
                     <div class="row">
                         <div class="col-sm-2">
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" name="pendidikan_terakhir_ibu" id="tidak_sekolah_ibu" value="tidak_sekolah" checked>
+                                <input class="form-check-input" type="radio" name="pendidikan_terakhir_ibu" id="tidak_sekolah_ibu" value="tidak_sekolah">
                                 <label class="form-check-label" for="tidak_sekolah_ibu">
                                     Tidak Sekolah
                                 </label>
@@ -333,7 +336,7 @@
                         </div>
                         <div class="col-sm-2">
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" name="pendidikan_terakhir_ibu" id="sd_ibu" value="SD" checked>
+                                <input class="form-check-input" type="radio" name="pendidikan_terakhir_ibu" id="sd_ibu" value="SD">
                                 <label class="form-check-label" for="sd_ibu">
                                     SD
                                 </label>
@@ -341,7 +344,7 @@
                         </div>
                         <div class="col-sm-2">
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" name="pendidikan_terakhir_ibu" id="smp_ibu" value="SMP" checked>
+                                <input class="form-check-input" type="radio" name="pendidikan_terakhir_ibu" id="smp_ibu" value="SMP">
                                 <label class="form-check-label" for="smp_ibu">
                                     SMP
                                 </label>
@@ -349,7 +352,7 @@
                         </div>
                         <div class="col-sm-2">
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" name="pendidikan_terakhir_ibu" id="sma_ibu" value="SMA" checked>
+                                <input class="form-check-input" type="radio" name="pendidikan_terakhir_ibu" id="sma_ibu" value="SMA">
                                 <label class="form-check-label" for="sma_ibu">
                                     SMA
                                 </label>
@@ -357,7 +360,7 @@
                         </div>
                         <div class="col-sm-2">
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" name="pendidikan_terakhir_ibu" id="diploma_ibu" value="Diploma" checked>
+                                <input class="form-check-input" type="radio" name="pendidikan_terakhir_ibu" id="diploma_ibu" value="Diploma">
                                 <label class="form-check-label" for="diploma_ibu">
                                     Diploma
                                 </label>
@@ -365,13 +368,14 @@
                         </div>
                         <div class="col-sm-2">
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" name="pendidikan_terakhir_ibu" id="sarjana_ibu" value="Sarjana" checked>
+                                <input class="form-check-input" type="radio" name="pendidikan_terakhir_ibu" id="sarjana_ibu" value="Sarjana">
                                 <label class="form-check-label" for="sarjana_ibu">
                                     Sarjana
                                 </label>
                             </div>
                         </div>
                     </div>
+                    <?php echo form_error('pendidikan_terakhir_ibu'); ?>
 				</div>
             </div>
             <div class="col-lg-6 col-sm-12">
@@ -448,7 +452,7 @@
                     <div class="row">
                         <div class="col-sm-2">
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" name="pendidikan_terakhir_wali" id="tidak_sekolah_wali" value="tidak_sekolah" checked>
+                                <input class="form-check-input" type="radio" name="pendidikan_terakhir_wali" id="tidak_sekolah_wali" value="tidak_sekolah">
                                 <label class="form-check-label" for="tidak_sekolah_wali">
                                     Tidak Sekolah
                                 </label>
@@ -456,7 +460,7 @@
                         </div>
                         <div class="col-sm-2">
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" name="pendidikan_terakhir_wali" id="sd_wali" value="SD" checked>
+                                <input class="form-check-input" type="radio" name="pendidikan_terakhir_wali" id="sd_wali" value="SD">
                                 <label class="form-check-label" for="sd_wali">
                                     SD
                                 </label>
@@ -464,7 +468,7 @@
                         </div>
                         <div class="col-sm-2">
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" name="pendidikan_terakhir_wali" id="smp_wali" value="SMP" checked>
+                                <input class="form-check-input" type="radio" name="pendidikan_terakhir_wali" id="smp_wali" value="SMP">
                                 <label class="form-check-label" for="smp_wali">
                                     SMP
                                 </label>
@@ -472,7 +476,7 @@
                         </div>
                         <div class="col-sm-2">
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" name="pendidikan_terakhir_wali" id="sma_wali" value="SMA" checked>
+                                <input class="form-check-input" type="radio" name="pendidikan_terakhir_wali" id="sma_wali" value="SMA">
                                 <label class="form-check-label" for="sma_wali">
                                     SMA
                                 </label>
@@ -480,7 +484,7 @@
                         </div>
                         <div class="col-sm-2">
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" name="pendidikan_terakhir_wali" id="diploma_wali" value="Diploma" checked>
+                                <input class="form-check-input" type="radio" name="pendidikan_terakhir_wali" id="diploma_wali" value="Diploma">
                                 <label class="form-check-label" for="diploma_wali">
                                     Diploma
                                 </label>
@@ -488,7 +492,7 @@
                         </div>
                         <div class="col-sm-2">
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" name="pendidikan_terakhir_wali" id="sarjana_wali" value="Sarjana" checked>
+                                <input class="form-check-input" type="radio" name="pendidikan_terakhir_wali" id="sarjana_wali" value="Sarjana">
                                 <label class="form-check-label" for="sarjana_wali">
                                     Sarjana
                                 </label>

@@ -16,6 +16,8 @@ class Registrasi extends CI_Controller{
         $this->form_validation->set_rules('tempat_lahir','Tempat lahir','required');
         $this->form_validation->set_rules('tanggal_lahir','Tanggal lahir','required');
         $this->form_validation->set_rules('asal_sekolah','Asal Sekolah','required');
+        $this->form_validation->set_rules('tinggal_bersama','Tinggal Bersama','required');
+        $this->form_validation->set_rules('jenis_kelamin','Jenis Kelamin','required');
         $this->form_validation->set_rules('agama','agama','required');
         $this->form_validation->set_rules('no_hp','Nomor Telepon','required|numeric');
         $this->form_validation->set_rules('jumlah_saudara','Jumlah Saudara','required');
@@ -25,11 +27,13 @@ class Registrasi extends CI_Controller{
         $this->form_validation->set_rules('tempat_lahir_ayah','Tempat lahir','required');
         $this->form_validation->set_rules('tanggal_lahir_ayah','Tanggal lahir','required');
         $this->form_validation->set_rules('pekerjaan_ayah','Pekerjaan','required');
+        $this->form_validation->set_rules('pendidikan_terakhir_ayah','Pendidikan Terakhir','required');
         
         /* form validasi registrasi identitas ibu */
         $this->form_validation->set_rules('nama_ibu','Nama Ibu','required');
         $this->form_validation->set_rules('tempat_lahir_ibu','Tempat lahir','required');
         $this->form_validation->set_rules('tanggal_lahir_ibu','Tanggal lahir','required');
+        $this->form_validation->set_rules('pendidikan_terakhir_ibu','Pendidikan Terakhir','required');
         $this->form_validation->set_rules('pekerjaan_ibu','Pekerjaan','required');
         
         /* form validasi registrasi persyaratan */

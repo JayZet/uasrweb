@@ -188,7 +188,7 @@ class registrasi_model extends CI_Model{
             'tempat_lahir_wali' => $this->input->post("tempat_lahir_wali"),
             'tanggal_lahir_wali' => $this->input->post("tanggal_lahir_wali"),
             'alamat_id_wali' => $alamat_wali['id'],
-            'pekerjaan_wali' => $this->input->post("pekerjaan_ibu")
+            'pekerjaan_wali' => $this->input->post("pekerjaan_wali")
         );
         $insert = $this->db->insert("wali", $insert_wali);
         
