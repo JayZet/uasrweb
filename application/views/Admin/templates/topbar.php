@@ -15,7 +15,7 @@
         <!-- Nav Item - User Information -->
             <span class="mr-2 d-none d-lg-inline text-gray-600 small"></span>
             <i class="fas fa-fw fa-user"></i>
-            Halo   <?= $mahasiswa->nama ; ?>
+            Halo   <?= $dosen->nama ; ?>
               
         </li>
 

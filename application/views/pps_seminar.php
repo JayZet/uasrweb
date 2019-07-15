@@ -1,8 +1,4 @@
 <div class="container">
- <!-- Page Heading -->
-    <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
-    </div>
 <div class="row">
     <!-- Card status pembayaran -->
     <div class="col-xl-3 col-md-6 mb-4">
@@ -13,8 +9,8 @@
                         <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Status Metopen</div>
                         <div class="h5 mb-0 font-weight-bold text-gray-800">
                         <?php 
-                        foreach($card as $d ){ 
-                          echo $d['status'];
+                        foreach($seminarpps as $d ){ 
+                          echo $d['status_pps'];
                           }
                           ?></div>
                         </div>
@@ -34,7 +30,7 @@
                         <div class="text-xs font-weight-bold text-success text-uppercase mb-1">Nilai UTS</div>
                         <div class="h5 mb-0 font-weight-bold text-gray-800">
                         <?php
-                        foreach($card as $d){
+                        foreach($seminarpps as $d){
                           if(($d['uts']>80) && ($d['uts']<=100)){
                             echo 'A ( Lulus )';
                           }else if(($d['uts']>60) && ($d['uts']<=80)){
@@ -53,7 +49,7 @@
                         </div>
                         </div>
                         <div class="col-auto">
-                        <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
+                        <i class="fas fa-info fa-2x text-gray-300"></i>
                         </div>
                     </div>
                     </div>
@@ -68,7 +64,7 @@
                         <div class="text-xs font-weight-bold text-success text-uppercase mb-1">Nilai UAS</div>
                         <div class="h5 mb-0 font-weight-bold text-gray-800">
                         <?php
-                        foreach($card as $d){
+                        foreach($seminarpps as $d){
                           if(($d['uas']>80) && ($d['uas']<=100)){
                             echo 'A ( Lulus )';
                           }else if(($d['uas']>60) && ($d['uas']<=80)){
@@ -87,7 +83,7 @@
                         </div>
                         </div>
                         <div class="col-auto">
-                        <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
+                        <i class="fas fa-info fa-2x text-gray-300"></i>
                         </div>
                     </div>
                     </div>
@@ -102,7 +98,7 @@
                         <div class="text-xs font-weight-bold text-success text-uppercase mb-1">Judul Metopen</div>
                         <div class="h5 mb-0 font-weight-bold text-gray-800">
                         <?php
-                        foreach($card as $d){
+                        foreach($seminarpps as $d){
                           echo $d['judul'];
                         }
                         ?>
@@ -136,23 +132,15 @@
             <th>Pembimbing</th>
           </tr>
         </thead>
-        <tfoot>
-          <tr>
-            <th>Nama Mahasiswa</th>
-            <th>Bidang Minat</th>
-            <th>Judul</th>
-            <th>Pembimbing</th>
-          </tr>
-        </tfoot>
         <tbody>
           <?php
-            foreach($data as $d){
+            foreach($seminarpps as $d){
                 echo '
                 <tr>
                 <td>'.$d['nama'].'</td>
                 <td>'.$d['bidang_minat'].'</td>
                 <td>'.$d['judul'].'</td>
-                <td>'.$d['dosen'].'</td>
+                <td>'.$d['dosen_pps'].'</td>
                 </tr>
                 ';
             }

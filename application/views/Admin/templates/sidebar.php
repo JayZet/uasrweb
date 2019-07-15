@@ -3,7 +3,7 @@
   
 </div>
 <!-- Sidebar -->
-<ul class="navbar-nav bg-gradient-success sidebar sidebar-dark accordion" id="accordionSidebar">
+<ul class="navbar-nav bg-gradient-danger sidebar sidebar-dark accordion" id="accordionSidebar">
 
   <!-- Sidebar - Brand -->
   <a class="sidebar-brand d-flex align-items-center justify-content-center" href="#">
@@ -18,7 +18,7 @@
 
   <!-- Nav Item - Dashboard -->
   <li class="nav-item">
-    <a class="nav-link" href="<?= base_url('Login_mhs/dashboard/'.$mahasiswa->username) ?>">
+    <a class="nav-link" href="<?= base_url('Admin/Login_dosen/Home/'.$dosen->niy) ?>">
       <i class="fas fa-fw fa-tachometer-alt"></i>
       <span>Dashboard</span></a>
   </li>
@@ -32,16 +32,19 @@
 
     <!-- Nav Item - Tables -->
     <li class="nav-item">
-      <a class="nav-link"collapsed" href="#" data-toggle="collapse" data-target="#collapsePages1" aria-expanded="true" aria-controls="collapsePages" >
+      <a class="nav-link" href="<?= base_url('Admin/Login_dosen/pembimbing/'.$dosen->niy) ?>">
         <i class="fas fa-fw fa-user"></i>
-        <span>Metopen</span></a>
-        <div id="collapsePages1" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
-          <div class="bg-white py-2 collapse-inner rounded">
-          
-            <a class="collapse-item" href="<?= base_url('Login_mhs/Home/'.$mahasiswa->username) ?>">Metopen</a>
-            <a class="collapse-item" href="<?= base_url('Login_mhs/Registrasi/'.$mahasiswa->username) ?>">Pendaftaran Metopen</a>
-
-        </div>
+        <span>Pengolahan Pembimbing</span></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="<?= base_url('Admin/Login_dosen/uts/'.$dosen->niy) ?>">
+        <i class="fas fa-fw fa-user"></i>
+        <span>Pengelolahan nilai UTS</span></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="<?= base_url('Admin/Login_dosen/uas/'.$dosen->niy) ?>">
+        <i class="fas fa-fw fa-user"></i>
+        <span>Pengelolahan nilai UAS</span></a>
     </li>
     <li class="nav-item">
       <a class="nav-link"collapsed" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true" aria-controls="collapsePages" >
@@ -50,31 +53,22 @@
         <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
           
-            <a class="collapse-item" href="<?= base_url('Login_mhs/pps_seminar/'.$mahasiswa->username) ?>">PPS</a>
-            <a class="collapse-item" href="<?= base_url('Login_mhs/pps/'.$mahasiswa->username) ?>">Pendaftaran PPS</a>
+            <a class="collapse-item" href="<?= base_url('Admin/Login_dosen/pembimbingpps/'.$dosen->niy) ?>">Pembimbing PPS</a>
+            <a class="collapse-item" href="<?= base_url('Admin/Login_dosen/utspps/'.$dosen->niy) ?>">Pengolahan UTS PPS</a>
+            <a class="collapse-item" href="<?= base_url('Admin/Login_dosen/uaspps/'.$dosen->niy) ?>">Pengolahan UAS PPS</a>
 
         </div>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="<?= base_url('Login_mhs/ptta/'.$mahasiswa->username) ?>">
-        <i class="fas fa-fw fa-user"></i>
-        <span>Pendaftaran PTTA</span></a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="<?= base_url('Login_mhs/jadwal/'.$mahasiswa->username) ?>">
+      <a class="nav-link" href="<?= base_url('Admin/Login_dosen/tampil_jadwal/'.$dosen->niy) ?>">
         <i class="fas fa-fw fa-user"></i>
         <span>Jadwal Seminar</span></a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="<?= base_url('Login_mhs/berkas/'.$mahasiswa->username) ?>">
-        <i class="fas fa-fw fa-user"></i>
-        <span>Download Berkas Metopen</span></a>
     </li>
   <!-- Divider -->
   <hr class="sidebar-divider">
 
   <li class="nav-item">
-    <a class="nav-link" href="<?= base_url('Login_mhs/logout'); ?>" data-toggle="modal" data-target="#logoutModal">
+    <a class="nav-link" href="#" data-toggle="modal" data-target="#logoutModal">
       <i class="fas fa-fw fa-sign-out-alt"></i>
       <span>Keluar</span></a>
   </li>

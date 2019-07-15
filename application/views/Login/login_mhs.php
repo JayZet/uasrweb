@@ -5,10 +5,10 @@
 		<div class="col-lg-4 col-md-12 col-sm-12">
             <hr>
             <?php if(isset($error)) { echo $error; }; ?>
-			<form action="<?= base_url('Login/aksi_login') ?>" method="post">
+			<form action="<?= base_url('Login_mhs/aksi_login') ?>" method="post">
 			
 				<div class="form-group">
-					<label for="exampleInputEmail1" style="color: teal;">Nomor Seluler</label>
+					<label for="exampleInputEmail1" style="color: teal;">Nim</label>
 					<input type="text" class="form-control form-control-user" id="username" name="username">
                         <?php echo form_error('username'); ?>
 						
@@ -18,9 +18,6 @@
 					<label for="exampleInputPassword1" style="color: teal;">Password</label>
 					<input type="password" class="form-control form-control-user" id="password" name="password">		
                     <?php echo form_error('password'); ?>
-                </div>
-                <div class="form-group">
-                    <small>Belum punya akun ? <a href="<?= base_url('Login/registrasi') ?>"> Daftar Sekarang</a></small>
                 </div>
 				<button type="submit" class="btn btn-success align-right" style="color: white;">Login</button>
             </form>

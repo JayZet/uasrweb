@@ -35,7 +35,7 @@
         <div class="modal-body">Pilih "Keluar" dibawah jika ingin pergi dari halaman ini.</div>
         <div class="modal-footer">
           <button class="btn btn-secondary" type="button" data-dismiss="modal">Batal</button>
-          <a class="btn btn-primary" href="<?= base_url('Login_mhs/logout'); ?>">Keluar</a>
+          <a class="btn btn-primary" href="<?= base_url('Admin/Login_dosen/logout'); ?>">Keluar</a>
         </div>
       </div>
     </div>
@@ -56,14 +56,8 @@
   <script src="<?= base_url(); ?>assets/vendor/datatables/dataTables.bootstrap4.min.js"></script>
 
   <!-- Page level custom scripts -->
-  <!-- <script src="<?= base_url(); ?>assets/js/demo/datatables-demo.js"></script> -->
-  <script>
-    $(document).ready(function() {
-      $('#dataTable').DataTable({
-      
-      });
-    });
-  </script>
+  <script src="<?= base_url(); ?>assets/js/demo/datatables-demo.js"></script>
+
 
   </body>
 
